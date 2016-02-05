@@ -8,7 +8,7 @@ social:
   github: martinosorb
   #bitbucket: philipj
   #hacker_news: swanson
-  #stackexchange: 348619
+  stackexchange: 2236691
   #stackoverflow: 348619
   twitter: martopix
   #facebook: zuck
@@ -30,4 +30,4 @@ google_analytics_key: UA-xxxx-x
 show_disclaimer: false
 
 # Toggle link/icon to view atom feed (/atom.xml) in sidebar
-show_atom_feed: true
+show_atom_feed: false
