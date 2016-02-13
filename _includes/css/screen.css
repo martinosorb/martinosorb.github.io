@@ -82,7 +82,7 @@ ul.posts li {
   line-height: 22px;
   font-size: 16px;
   margin-bottom: 10px;
-  border-bottom: 3px solid #ddd;
+  border-bottom: 3px solid #eee;
 }
 
 ul.posts span {
@@ -95,15 +95,14 @@ ul.posts span {
 ul.posts p {
   font-family: 'Lucida Console', 'Andale Mono', monospace;
   text-align: justify;
-  color: #555;
+  color: #000;
   padding-right: 5px;
   font-size:14px;
 }
 
 ul.posts img {
-    float:right;
-    height: 100px;
-    width: 100px;
+    float: right;
+    height: 150px;
     margin-left: 10px;
 }
 
@@ -115,7 +114,7 @@ ul.posts img {
 .site .footer {
   font-size: 80%;
   color: #666;
-  border-top: 4px solid #eee;
+  border-top: 3px solid #eee;
   overflow: hidden;
 }
 
