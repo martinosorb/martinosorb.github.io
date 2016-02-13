@@ -1,4 +1,5 @@
 # General Jekyll Config
+markdown: maruku
 highlighter: rouge
 url: http://example.com
 lsi: false
