@@ -81,7 +81,8 @@ ul.posts {
 ul.posts li {
   line-height: 22px;
   font-size: 16px;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
+  border-bottom: 3px solid #ddd;
 }
 
 ul.posts span {
@@ -89,6 +90,21 @@ ul.posts span {
   color: #aaa;
   padding-right: 5px;
   font-size:14px;
+}
+
+ul.posts p {
+  font-family: 'Lucida Console', 'Andale Mono', monospace;
+  text-align: justify;
+  color: #555;
+  padding-right: 5px;
+  font-size:14px;
+}
+
+ul.posts img {
+    float:right;
+    height: 100px;
+    width: 100px;
+    margin-left: 10px;
 }
 
 .meta {
