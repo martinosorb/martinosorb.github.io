@@ -93,6 +93,7 @@ ul.posts span {
 }
 
 ul.posts p {
+  line-height: 17px;
   font-family: 'Lucida Console', 'Andale Mono', monospace;
   text-align: justify;
   color: #000;
