@@ -38,9 +38,9 @@ To construct a meaningful model, we slowly incorporate the relevant biological a
 
 ##### Non-refractoriness
 
-The fraction of excitatory neurons that fired between $t\_1$ and $t\_2$ is
+The fraction of excitatory neurons that fired between $t _ 1$ and $t _ 2$ is
 
-$$ \int\_{t\_1}^{t\_2} E(t')dt'. $$  
+$$ \int _ {t _ 1}^{t _ 2} E(t')dt'. $$  
 
 Therefore, if $r$ is the length of the refractory period, the fraction of neurons that satisfy condition 1 at time $t$ is:  
 
@@ -49,33 +49,33 @@ $$ 1 - \int_{t-r}^{t} E(t')dt' \quad\quad (1)$$
 and similarly for the inhibitory subpopulation.
 
 ##### Sufficient excitation
-To see if condition 2 is fulfilled, we need the total input to the subpopulation, which is $c\_1 E(t) - c\_2 I(t) + P(t)$, i.e. a weighed contribution from the excitatory population, a corresponding negative contribution from the inhibitory neurons, and an external input $P$. Then, the neuron responds non-linearly to this input. We call $S\_e$ the response function, also called the *input-frequency characteristic* of the excitatory neurons, and correspondingly $S\_i$ for the inhibitory ones.  
+To see if condition 2 is fulfilled, we need the total input to the subpopulation, which is $c _ 1 E(t) - c _ 2 I(t) + P(t)$, i.e. a weighed contribution from the excitatory population, a corresponding negative contribution from the inhibitory neurons, and an external input $P$. Then, the neuron responds non-linearly to this input. We call $S _ e$ the response function, also called the *input-frequency characteristic* of the excitatory neurons, and correspondingly $S _ i$ for the inhibitory ones.  
 Now, it's not only the instantaneous behaviour that counts: a spike can still help eliciting a new spike in a downstream neuron even a few milliseconds later. So the probability of being excited at time $t$ is proportional to
 
-$$ S\_e \left( \int\_{-\infty}^t \alpha(t-t') [c\_1 E(t') - c\_2 I(t') + P(t')]dt' \right) \quad\quad (2)$$
+$$ S _ e \left( \int _ {-\infty}^t \alpha(t-t') [c _ 1 E(t') - c _ 2 I(t') + P(t')]dt' \right) \quad\quad (2)$$
 
 
 ##### Coarse graining
 
 Both in (1) and (2) we can get rid of the integrals and multiply the stimulus by a constant describing the length of the time influence instead, if we are interested in the coarse grained temporal behaviour of the activity, i.e. we focus on variations at a timescale slightly longer than the refractory period $r$ and the "characteristic length", which we call $k$, of the function $\alpha$. So, finally, we can say the activity at time $d + dt$ depends on the simultaneous fulfillment of conditions (1) and (2):
 
-$$ E(t + dt) = (1- rE(t))\, S\_e(kc\_1 E(t) - kc\_2 I(t) + kP(t)) $$
+$$ E(t + dt) = (1- rE(t))\, S _ e(kc _ 1 E(t) - kc _ 2 I(t) + kP(t)) $$
 
 <a id="numerical"></a>
 ### Wilson and Cowan's model, a final version
 
 After all these approximations and assumptions, by turning the equation above in differential form and appropriately rescaling $S_e$, we reach a system of coupled, nonlinear, differential equation for the firing rates of the excitatory and inhibitory populations, which constitute the Wilson-Cowan model.
 
-$$ \tau\_e \frac{dE}{dt} = -E + (k\_e - r\_e E) \, S\_e(c_1 E - c\_2 I + P)$$
+$$ \tau _ e \frac{dE}{dt} = -E + (k _ e - r _ e E) \, S _ e(c_1 E - c _ 2 I + P)$$
 
-$$ \tau\_i \frac{dI}{dt} = -I + (k\_i - r\_i I) \, S\_i(c_3 E - c\_4 I + Q),$$
+$$ \tau _ i \frac{dI}{dt} = -I + (k _ i - r _ i I) \, S _ i(c_3 E - c _ 4 I + Q),$$
 
 where:
 
-* $\tau\_e$ and $\tau\_i$ are time constants;
-* $k\_e$ and $k\_i$ are adimensional constants;
-* $r\_e$ and $r\_i$ are constants describing the length of the refractory periods;
-* $S\_e$ and $S\_i$ are sigmoid functions expressing the nonlinearity of the interactions;
+* $\tau _ e$ and $\tau _ i$ are time constants;
+* $k _ e$ and $k _ i$ are adimensional constants;
+* $r _ e$ and $r _ i$ are constants describing the length of the refractory periods;
+* $S _ e$ and $S _ i$ are sigmoid functions expressing the nonlinearity of the interactions;
 * $c_{1,2,3,4}$ are parameters representing the strength of the excitatory to excitatory, inhibitory to excitatory, excitatory to inhibitory and inhibitory to inhibitory interactions;
 * $P$ and $Q$ are external inputs to the two populations.
 
