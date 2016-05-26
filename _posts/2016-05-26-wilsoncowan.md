@@ -58,6 +58,7 @@ Both in (1) and (2) we can get rid of the integrals and multiply the stimulus by
 $$ E(t + dt) = (1- rE(t))\, S_e(kc_1 E(t) - kc_2 I(t) + kP(t)) $$
 
 <a id="numerical"></a>
+
 ### Wilson and Cowan's model, a final version
 
 After all these approximations and assumptions, by turning the equation above in differential form and appropriately rescaling $S_e$, we reach a system of coupled, nonlinear, differential equation for the firing rates of the excitatory and inhibitory populations, which constitute the Wilson-Cowan model.
