@@ -191,15 +191,16 @@ y1 = x1.ravel()
 y2 = x2.ravel()
 for i in range(resolution**2):
     # find a zero
-    sol, infodict, ier, mesg = fsolve(WilsonCowan, [y1[i], y2[i]], args=(0), full_output=1)
+    sol, infodict, ier, mesg = fsolve(WilsonCowan,
+                                      [y1[i], y2[i]],
+                                      args=(0),
+                                      full_output=1)
     if ier == 1: # I exclude the cases where fsolve didn't converge
         fixed_p.append(sol)
 
 fixed_p = np.array(fixed_p).T
 ```
 
-    /usr/local/lib/python3.5/dist-packages/ipykernel/__main__.py:2: RuntimeWarning: overflow encountered in exp
-      from ipykernel import kernelapp as app
 
 
 #### Numerical ODE integration
@@ -237,7 +238,8 @@ plt.grid()
 plt.plot(inh_timeseries, exc_timeseries, '.-');
 
 # plot the fixed points we identified
-plt.scatter(fixed_p[1], fixed_p[0], marker='o', c='k', s=50, label="Stationary points")
+plt.scatter(fixed_p[1], fixed_p[0], marker='o', c='k', s=50,
+            label="Stationary points")
 
 # plot the starting point
 plt.scatter(I0, E0, marker='*', c='r', s=300, label="Starting point")
