@@ -30,19 +30,26 @@ Spatial interactions are discussed in a subsequent paper by the same authors.
 In the rest of the post, we will call $E(t)$ and $I(t)$ the istantaneous firing rates, at time $t$, of the excitatory and inhibitory populations respectively. The point $(E=0, I=0)$ should not be interpreted as the state where the activity is completely dead, but rather as the resting state of the network, as we will require it to be a stable fixed point.
 
 To construct a meaningful model, we slowly incorporate the relevant biological assumptions. When does a neuron fire? In the simplest models, two conditions need to be fulfilled:
+
 1. the neuron should *not* be in its "refractory period", that is, it can't fire again just after having fired;
+
 2. it needs to have received sufficient input in a short interval of time.
 
 ##### Non-refractoriness
 The fraction of excitatory neurons that fired between $t_1$ and $t_2$ is
+
 $$ \int_{t_1}^{t_2} E(t')dt'. $$  
+
 Therefore, if $r$ is the length of the refractory period, the fraction of neurons that satisfy condition 1 at time $t$ is:  
+
 $$ 1 - \int_{t-r}^{t} E(t')dt' \quad\quad (1)$$  
+
 and similarly for the inhibitory subpopulation.
 
 ##### Sufficient excitation
 To see if condition 2 is fulfilled, we need the total input to the subpopulation, which is $c_1 E(t) - c_2 I(t) + P(t)$, i.e. a weighed contribution from the excitatory population, a corresponding negative contribution from the inhibitory neurons, and an external input $P$. Then, the neuron responds non-linearly to this input. We call $S_e$ the response function, also called the *input-frequency characteristic* of the excitatory neurons, and correspondingly $S_i$ for the inhibitory ones.  
 Now, it's not only the instantaneous behaviour that counts: a spike can still help eliciting a new spike in a downstream neuron even a few milliseconds later. So the probability of being excited at time $t$ is proportional to
+
 $$ S_e \left( \int_{-\infty}^t \alpha(t-t') [c_1 E(t') - c_2 I(t') + P(t')]dt' \right) \quad\quad (2)$$
 
 
@@ -56,13 +63,21 @@ $$ E(t + dt) = (1- rE(t))\, S_e(kc_1 E(t) - kc_2 I(t) + kP(t)) $$
 After all these approximations and assumptions, by turning the equation above in differential form and appropriately rescaling $S_e$, we reach a system of coupled, nonlinear, differential equation for the firing rates of the excitatory and inhibitory populations, which constitute the Wilson-Cowan model.
 
 $$ \tau_e \frac{dE}{dt} = -E + (k_e - r_e E) \, S_e(c_1 E - c_2 I + P)$$
+
 $$ \tau_i \frac{dI}{dt} = -I + (k_i - r_i I) \, S_i(c_3 E - c_4 I + Q),$$
+
 where:
+
 * $\tau_e$ and $\tau_i$ are time constants;
+
 * $k_e$ and $k_i$ are adimensional constants
+
 * $r_e$ and $r_i$ are constants describing the length of the refractory periods;
+
 * $S_e$ and $S_i$ are sigmoid functions expressing the nonlinearity of the interactions;
+
 * $c_{1,2,3,4}$ are parameters representing the strength of the excitatory to excitatory, inhibitory to excitatory, excitatory to inhibitory and inhibitory to inhibitory interactions;
+
 * $P$ and $Q$ are external inputs to the two populations.
 
 ## Numerical solutions
@@ -159,6 +174,7 @@ M = np.hypot(X1, X2)
 ```
 
 ### Solving and plotting
+
 #### Numerical search of stationary points
 
 This is a tricky part. To view the stationary points, which are an important property of a dynamical system, we need to study the points where the derivatives of $E$ and $I$ are zero, i.e., where the function called WilsonCowan is zero. Since it's highly nonlinear, we have to do that numerically.
@@ -244,8 +260,12 @@ plt.legend();
 
 
 We can see the system exhibits:
+
  - a **stable** stationary point at (0.5, 0.5)
+
  - an **unstable** stationary point at (0.5, 0.4)
+
  - a **limit cycle** about the stationary point at (0.1, 0.05)
+
 
 The different nature of the stationary point, and the consequent influence they have on the behaviour of the solution in their neighbourhood, is due to the eigenvalues of the system when linearised near that point. Refer to a textbook for that!
