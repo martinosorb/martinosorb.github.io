@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Dynamical systems with Python&#58; Wilson and Cowan's model
 description: "Wilson and Cowan, in the seventies, developed a dynamical systems approach to the study of the large-scale behaviour of neuronal population. Their approach doesn't mind the behaviour of single neurons, but works at the level of population firing rates (roughly, the number of neurons that fire in the unit time) for two subpopulation the inhibitory neurons and the excitatory neurons."
 imgurl: /files/output_15_0.png
