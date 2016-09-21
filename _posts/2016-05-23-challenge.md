@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: A spike train challenge
 description: Recently, while discussing during a journal club, I wondered how easily a computational neuroscientist can distinguish between a real neuronal recording and a simulated dataset. So I took a real dataset, imitated it with a model, and I'm asking you to tell me which one is which.
 imgurl: /files/challenge-timeseries.png
