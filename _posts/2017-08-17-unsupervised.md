@@ -11,7 +11,6 @@ categories:
 - blog
 ---
 
-# Easy unsupervised learning
 With python, scikit-learn, and handwritten digits
 
 This is a notebook that I made for a high school student who visited our lab. It is a simple introduction
