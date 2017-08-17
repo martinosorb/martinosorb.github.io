@@ -192,7 +192,7 @@ plt.ylim([tsne_embedding[:, 1].min()-1, tsne_embedding[:, 1].max()+1]);
 ```
 
 
-<img src="/files/unsupervised/output_13_0.png" width=200>
+![png](/files/unsupervised/output_10_0.png)
 
 
 # Clustering with k-means
