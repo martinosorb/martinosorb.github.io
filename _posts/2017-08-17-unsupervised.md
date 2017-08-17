@@ -1,3 +1,16 @@
+---
+layout: post
+comments: true
+title: "Easy unsupervised learning demonstration"
+description: "With python, scikit-learn, and handwritten digits
+
+This is a notebook that I made for a high school student who visited our lab. It is a simple introduction
+to dimensionality reduction and should not be considered a statement that I'm an expert in unsupervised learning.."
+imgurl: /files/unsupervised/output_13_0
+use_math: false
+categories:
+- blog
+---
 
 # Easy unsupervised learning
 With python, scikit-learn, and handwritten digits
