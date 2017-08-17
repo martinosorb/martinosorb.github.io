@@ -5,7 +5,7 @@ title: "Easy unsupervised learning demonstration"
 description: "With python, scikit-learn, and handwritten digits.
 This is a notebook that I made for a high school student who visited our lab. It is a simple introduction
 to dimensionality reduction and should not be considered a statement that I'm an expert in unsupervised learning.."
-imgurl: /files/unsupervised/output_13_0
+imgurl: /files/unsupervised/output_13_0.png
 use_math: false
 categories:
 - blog
@@ -192,7 +192,7 @@ plt.ylim([tsne_embedding[:, 1].min()-1, tsne_embedding[:, 1].max()+1]);
 ```
 
 
-![png](/files/unsupervised/output_10_0.png)
+<img src="/files/unsupervised/output_13_0.png" width=200>
 
 
 # Clustering with k-means
