@@ -8,7 +8,7 @@ title: Blog Posts
   <ul id="blog-posts" class="posts">
     {% for post in site.posts %}
       <li id='posts'><span>{{ post.date | date_to_string }} &raquo; </span><a href="{{ post.url }}">{{ post.title }}
-      <img src="{{ post.imgurl }}" /></a></br>
+      <img src="{{ post.imgurl }}" /></a><br/>
       <p>{{ post.description }}</p></li>
     {% endfor %}
   </ul>
