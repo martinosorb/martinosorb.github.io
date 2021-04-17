@@ -8,7 +8,7 @@ to dimensionality reduction and should not be considered a statement that I'm an
 imgurl: /files/unsupervised/output_13_0.png
 use_math: false
 categories:
-- blog
+- notebooks
 ---
 
 With python, scikit-learn, and handwritten digits

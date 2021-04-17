@@ -6,7 +6,7 @@ description: "Wilson and Cowan, in the seventies, developed a dynamical systems 
 imgurl: /files/output_15_0.png
 use_math: true
 categories:
-- blog
+- notebooks
 ---
 
 *You can download the original, working jupyter notebook [here](/files/wilsoncowan.ipynb)*
