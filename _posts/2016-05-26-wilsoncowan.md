@@ -41,7 +41,9 @@ To construct a meaningful model, we slowly incorporate the relevant biological a
 ##### Non-refractoriness
 The fraction of excitatory neurons that fired between $t_1$ and $t_2$ is
 
+{% raw %}
 $$ \int_{t_1}^{t_2} E(t')dt'. $$  
+{% endraw %}
 
 Therefore, if $r$ is the length of the refractory period, the fraction of neurons that satisfy condition 1 at time $t$ is:  
 
