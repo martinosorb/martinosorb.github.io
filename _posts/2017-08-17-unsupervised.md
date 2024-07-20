@@ -10,13 +10,15 @@ categories:
 - notebooks
 ---
 
-With python, scikit-learn, and handwritten digits
+<a target="_blank" href="https://colab.research.google.com/github/martinosorb/martinosorb.github.io/blob/master/files/unsupervised/unsupervised.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+*You can download the original, working jupyter notebook [here](/files/unsupervised/unsupervised.ipynb)*.
+
+With python, scikit-learn, and handwritten digits.
 
 This is a notebook that I made for a high school student who visited our lab. It is a simple introduction
 to dimensionality reduction and should not be considered a statement that I'm an expert in unsupervised learning.
-
-*You can download the original, working jupyter notebook [here](/files/unsupervised/unsupervised.ipynb)*
-
 
 ## Loading the digits dataset
 It's a dataset that contains around 1700 images (8x8 pixels) of handwritten digits. Recognising handwriting is a hard task for a computer, but can nowadays be done with good reliability.

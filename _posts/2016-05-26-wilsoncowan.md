@@ -8,7 +8,10 @@ categories:
 - notebooks
 ---
 
-*You can download the original, working jupyter notebook [here](/files/wilsoncowan.ipynb)*
+<a target="_blank" href="https://colab.research.google.com/github/martinosorb/martinosorb.github.io/blob/master/files/wilsoncowan.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+*You can download the original, working jupyter notebook [here](/files/wilsoncowan.ipynb)*.
 
 Wilson and Cowan, in the seventies, developed a dynamical systems approach to the study of the large-scale behaviour of neuronal population. Their approach doesn't mind the behaviour of single neurons, but works at the level of population firing rates (roughly, the number of neurons that fire in the unit time) for two subpopulation: the inhibitory neurons and the excitatory neurons.
 
