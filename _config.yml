@@ -1,5 +1,6 @@
 # General Jekyll Config
-markdown: redcarpet
+markdown: kramdown
+mathjax: true
 highlighter: rouge
 url: http://example.com
 lsi: false

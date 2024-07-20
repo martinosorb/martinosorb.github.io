@@ -6,7 +6,6 @@ description: "With python, scikit-learn, and handwritten digits.
 This is a notebook that I made for a high school student who visited our lab. It is a simple introduction
 to dimensionality reduction and should not be considered a statement that I'm an expert in unsupervised learning.."
 imgurl: /files/unsupervised/output_13_0.png
-use_math: false
 categories:
 - notebooks
 ---
@@ -72,7 +71,7 @@ plt.yticks([]);
 
 # Dimensionality reduction
 
-Our world is three-dimensional. Mathematically, this means that we need three numbers to identify a point in space: for example the $x$, $y$, $z$ Cartesian coordinates, or, on Earth, latitude, longitude, and altitude.
+Our world is three-dimensional. Mathematically, this means that we need three numbers to identify a point in space: for example the $$x$$, $$y$$, $$z$$ Cartesian coordinates, or, on Earth, latitude, longitude, and altitude.
 
 The "space of digits" is 64-dimensional. What does this mean? Simply, that we need 64 numbers to describe a digit. Each of these number represents a shade of gray for each of the 64 pixels (8x8) of the image.
 
